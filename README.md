@@ -10,6 +10,10 @@ Built from [Peasy Compress](https://peasytools.com), the developer tools platfor
 
 > **Try the interactive tools at [peasytools.com](https://peasytools.com)** -- [Compress Tool](https://peasytools.com/tools/compress/), [Archive Tool](https://peasytools.com/tools/archive/)
 
+<p align="center">
+  <img src="demo.gif" alt="peasy-compress demo — file compression and decompression in terminal" width="800">
+</p>
+
 ## Table of Contents
 
 - [Install](#install)
