@@ -8,7 +8,7 @@ Archive and compression library for Node.js -- ZIP create/extract/list/add, gzip
 
 Built from [Peasy Compress](https://peasytools.com), the developer tools platform for file processing, text analysis, and web utilities.
 
-> **Try the interactive tools at [peasytools.com](https://peasytools.com)** -- [Compress Tool](https://peasytools.com/tools/compress/), [Archive Tool](https://peasytools.com/tools/archive/)
+> **Try the interactive tools at [peasytools.com](https://peasytools.com)** -- compression, archiving, and 255 more browser-based tools
 
 <p align="center">
   <img src="demo.gif" alt="peasy-compress demo — file compression and decompression in terminal" width="800">
@@ -103,7 +103,7 @@ const files = zipExtract(updated);
 Object.keys(files); // ["src/index.ts", "package.json", "LICENSE", "README.md"]
 ```
 
-Learn more: [Compress Tool](https://peasytools.com/tools/compress/) -- [Archive Guide](https://peasytools.com/glossary/archive/)
+Learn more: [Peasy Tools](https://peasytools.com) · [Glossary](https://peasytools.com/glossary/)
 
 ### Gzip Compression
 
@@ -129,7 +129,7 @@ const fast = gzipCompress(html, 1);
 const best = gzipCompress(html, 9);
 ```
 
-Learn more: [Gzip Reference](https://peasytools.com/glossary/gzip/) -- [Compression Guide](https://peasytools.com/glossary/compression/)
+Learn more: [Peasy Tools](https://peasytools.com) · [Glossary](https://peasytools.com/glossary/)
 
 ### Brotli Compression
 
@@ -153,7 +153,7 @@ console.log(original.equals(css)); // true
 const quick = brotliCompress(css, 1);
 ```
 
-Learn more: [Brotli Reference](https://peasytools.com/glossary/brotli/) -- [Web Compression Guide](https://peasytools.com/glossary/web-compression/)
+Learn more: [Peasy Tools](https://peasytools.com) · [Glossary](https://peasytools.com/glossary/)
 
 ### Deflate Compression
 
@@ -173,7 +173,7 @@ const fast = deflateCompress(data, 1);
 const best = deflateCompress(data, 9);
 ```
 
-Learn more: [Deflate Reference](https://peasytools.com/glossary/deflate/) -- [Compression Algorithms](https://peasytools.com/glossary/compression-algorithms/)
+Learn more: [Peasy Tools](https://peasytools.com) · [Glossary](https://peasytools.com/glossary/)
 
 ## TypeScript Types
 
