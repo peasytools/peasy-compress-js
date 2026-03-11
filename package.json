@@ -1,0 +1,47 @@
+{
+  "name": "peasy-compress",
+  "version": "0.1.0",
+  "description": "Archive & compression library for Node.js — ZIP, gzip, brotli, deflate. Zero-config, TypeScript-first.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "compress",
+    "zip",
+    "gzip",
+    "brotli",
+    "archive",
+    "peasy"
+  ],
+  "author": "Peasy Tools",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/peasytools/peasy-compress-js.git"
+  },
+  "homepage": "https://peasytools.com",
+  "dependencies": {
+    "adm-zip": "^0.5",
+    "archiver": "^7.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5",
+    "@types/archiver": "^6.0",
+    "tsup": "^8.0",
+    "typescript": "^5.7",
+    "vitest": "^3.0"
+  }
+}
