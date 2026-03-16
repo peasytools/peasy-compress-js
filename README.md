@@ -1,6 +1,6 @@
 # peasy-compress
 
-[![npm](https://img.shields.io/npm/v/peasy-compress)](https://www.npmjs.com/package/peasy-compress)
+[![npm version](https://agentgif.com/badge/npm/peasy-compress/version.svg)](https://www.npmjs.com/package/peasy-compress)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
