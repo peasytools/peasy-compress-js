@@ -25,7 +25,9 @@ Built from [Peasy Compress](https://peasytools.com), the developer tools platfor
   - [Deflate Compression](#deflate-compression)
 - [TypeScript Types](#typescript-types)
 - [API Reference](#api-reference)
-- [Also Available for Python](#also-available-for-python)
+- [REST API Client](#rest-api-client)
+- [Learn More](#learn-more)
+- [Also Available](#also-available)
 - [Peasy Developer Tools](#peasy-developer-tools)
 - [License](#license)
 
@@ -221,25 +223,69 @@ const level: CompressionLevel = 6;
 | `brotliCompress(data, level?)` | Brotli compress a Buffer |
 | `brotliDecompress(data)` | Brotli decompress a Buffer |
 
-## Also Available for Python
+## REST API Client
 
-```bash
-pip install peasy-compress
+The API client connects to the [Peasy Compress developer API](https://peasytools.com/developers/) for tool discovery and content.
+
+```typescript
+import { PeasyCompressClient } from "peasy-compress";
+
+const client = new PeasyCompressClient();
+
+// List available tools
+const tools = await client.listTools();
+console.log(tools.results);
+
+// Search across all content
+const results = await client.search("zip");
+console.log(results);
+
+// Browse the glossary
+const glossary = await client.listGlossary({ search: "format" });
+for (const term of glossary.results) {
+  console.log(`${term.term}: ${term.definition}`);
+}
+
+// Discover guides
+const guides = await client.listGuides({ category: "compress" });
+for (const guide of guides.results) {
+  console.log(`${guide.title} (${guide.audience_level})`);
+}
 ```
 
-The Python package provides ZIP, tar, and gzip operations with CLI, MCP server, and REST API client. See [peasy-compress on PyPI](https://pypi.org/project/peasy-compress/).
+Full API documentation at [peasytools.com/developers/](https://peasytools.com/developers/).
+
+## Learn More
+
+- **Tools**: [ZIP Compress](https://peasytools.com/tools/zip-compress/) · [Gzip Compress](https://peasytools.com/tools/gzip-compress/) · [TAR Archive](https://peasytools.com/tools/tar-archive/) · [All Tools](https://peasytools.com/)
+- **Guides**: [Compression Guide](https://peasytools.com/guides/compress/) · [All Guides](https://peasytools.com/guides/)
+- **Glossary**: [ZIP](https://peasytools.com/glossary/zip/) · [Gzip](https://peasytools.com/glossary/gzip/) · [All Terms](https://peasytools.com/glossary/)
+- **Formats**: [ZIP](https://peasytools.com/formats/zip/) · [Gzip](https://peasytools.com/formats/gzip/) · [All Formats](https://peasytools.com/formats/)
+- **API**: [REST API Docs](https://peasytools.com/developers/) · [OpenAPI Spec](https://peasytools.com/api/openapi.json)
+
+## Also Available
+
+| Language | Package | Install |
+|----------|---------|---------|
+| **Python** | [peasy-compress](https://pypi.org/project/peasy-compress/) | `pip install "peasy-compress[all]"` |
+| **Go** | [peasy-compress-go](https://pkg.go.dev/github.com/peasytools/peasy-compress-go) | `go get github.com/peasytools/peasy-compress-go` |
+| **Rust** | [peasy-compress](https://crates.io/crates/peasy-compress) | `cargo add peasy-compress` |
+| **Ruby** | [peasy-compress](https://rubygems.org/gems/peasy-compress) | `gem install peasy-compress` |
 
 ## Peasy Developer Tools
 
+Part of the [Peasy Tools](https://peasytools.com) open-source developer ecosystem.
+
 | Package | PyPI | npm | Description |
 |---------|------|-----|-------------|
-| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text analysis -- readability, sentiment, keywords |
-| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | -- | PDF processing -- extract, merge, split, metadata |
-| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | -- | Image ops -- resize, crop, filter, watermark |
-| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS generation -- gradients, shadows, flexbox, grid |
-| **peasy-compress** | [PyPI](https://pypi.org/project/peasy-compress/) | **[npm](https://www.npmjs.com/package/peasy-compress)** | **Archive & compression -- ZIP, gzip, brotli, deflate** |
-
-Part of the [Peasy](https://peasytools.com) developer tools ecosystem.
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, rotate, compress, 21 operations — [peasypdf.com](https://peasypdf.com) |
+| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, compress — [peasyimage.com](https://peasyimage.com) |
+| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | [npm](https://www.npmjs.com/package/peasy-audio) | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, thumbnails, GIF — [peasyvideo.com](https://peasyvideo.com) |
+| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS minify, format, analyze — [peasycss.com](https://peasycss.com) |
+| **peasy-compress** | **[PyPI](https://pypi.org/project/peasy-compress/)** | **[npm](https://www.npmjs.com/package/peasy-compress)** | **ZIP, TAR, gzip compression — [peasytools.com](https://peasytools.com)** |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON conversion — [peasyformats.com](https://peasyformats.com) |
+| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text case conversion, slugify, word count — [peasytext.com](https://peasytext.com) |
 
 ## License
 
