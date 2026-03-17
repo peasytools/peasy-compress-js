@@ -3,6 +3,7 @@
 [![npm version](https://agentgif.com/badge/npm/peasy-compress/version.svg)](https://www.npmjs.com/package/peasy-compress)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-compress-js/stars.svg)](https://github.com/peasytools/peasy-compress-js)
 
 Archive and compression library for Node.js -- ZIP create/extract/list/add, gzip, brotli, and deflate. TypeScript-first with full type safety, built on Node.js native `zlib` and `adm-zip`.
 
