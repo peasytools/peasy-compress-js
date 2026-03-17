@@ -25,3 +25,21 @@ export {
   brotliCompress,
   brotliDecompress,
 } from "./engine.js";
+
+// API Client
+export { PeasyCompress } from "./client.js";
+export type {
+  ListOptions,
+  ListGuidesOptions,
+  ListConversionsOptions,
+  PaginatedResponse,
+  Tool,
+  Category,
+  Format,
+  Conversion,
+  GlossaryTerm,
+  Guide,
+  UseCase,
+  Site,
+  SearchResult,
+} from "./api-types.js";
