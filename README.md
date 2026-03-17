@@ -257,10 +257,10 @@ Full API documentation at [peasytools.com/developers/](https://peasytools.com/de
 
 ## Learn More
 
-- **Tools**: [ZIP Compress](https://peasytools.com/tools/zip-compress/) · [Gzip Compress](https://peasytools.com/tools/gzip-compress/) · [TAR Archive](https://peasytools.com/tools/tar-archive/) · [All Tools](https://peasytools.com/)
-- **Guides**: [Compression Guide](https://peasytools.com/guides/compress/) · [All Guides](https://peasytools.com/guides/)
-- **Glossary**: [ZIP](https://peasytools.com/glossary/zip/) · [Gzip](https://peasytools.com/glossary/gzip/) · [All Terms](https://peasytools.com/glossary/)
-- **Formats**: [ZIP](https://peasytools.com/formats/zip/) · [Gzip](https://peasytools.com/formats/gzip/) · [All Formats](https://peasytools.com/formats/)
+- **Tools**: [Compression Tools](https://peasytools.com/) · [All Tools](https://peasytools.com/)
+- **Guides**: [Archive Formats Compared](https://peasytools.com/guides/archive-formats-compared/) · [Lossless vs Lossy Compression](https://peasytools.com/guides/lossless-vs-lossy-compression-guide/) · [All Guides](https://peasytools.com/guides/)
+- **Glossary**: [Archive](https://peasytools.com/glossary/archive/) · [TAR](https://peasytools.com/glossary/tar/) · [Brotli](https://peasytools.com/glossary/brotli/) · [Lossless Compression](https://peasytools.com/glossary/lossless-compression/) · [All Terms](https://peasytools.com/glossary/)
+- **Formats**: [ZIP](https://peasytools.com/formats/zip/) · [TAR](https://peasytools.com/formats/tar/) · [Gzip](https://peasytools.com/formats/gz/) · [All Formats](https://peasytools.com/formats/)
 - **API**: [REST API Docs](https://peasytools.com/developers/) · [OpenAPI Spec](https://peasytools.com/api/openapi.json)
 
 ## Also Available
