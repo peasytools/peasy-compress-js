@@ -1,6 +1,6 @@
 {
   "name": "peasy-compress",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Archive & compression library for Node.js — ZIP, gzip, brotli, deflate. Zero-config, TypeScript-first.",
   "type": "module",
   "main": "dist/index.js",
