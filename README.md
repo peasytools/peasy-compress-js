@@ -12,7 +12,7 @@ Built from [Peasy Compress](https://peasytools.com), the developer tools platfor
 > **Try the interactive tools at [peasytools.com](https://peasytools.com)** -- compression, archiving, and 255 more browser-based tools
 
 <p align="center">
-  <img src="demo.gif" alt="peasy-compress demo — file compression and decompression in terminal" width="800">
+  <a href="https://agentgif.com/Pwc8MQwG"><img src="https://media.agentgif.com/Pwc8MQwG.gif" alt="peasy-compress demo — file compression and decompression in terminal" width="800"></a>
 </p>
 
 ## Table of Contents
